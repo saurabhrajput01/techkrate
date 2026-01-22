@@ -50,6 +50,222 @@ INNOVATIONS is an influencer marketing firm that matches clients with the releva
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
+    
+    /* WHY BRANDS TRUST US - Two Column Layout */
+    .trust-section_wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .trust-section_wrapper .about-cta_title-wrapper {
+      margin-top: 1.5rem !important;
+    }
+    
+    .trust-section_content-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 4.5rem;
+      align-items: center;
+      width: 100%;
+      padding: 2.5rem 0;
+    }
+    
+    .trust-section_text-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    
+    .trust-section_text-content {
+      color: rgba(255, 255, 255, 0.95);
+      line-height: 1.8;
+      font-size: 0.975rem;
+      font-family: 'Poppins', 'Inter', 'Helvetica', sans-serif;
+      font-weight: 400;
+      width: 100%;
+      letter-spacing: 0.15px;
+    }
+    
+    .trust-section_paragraph {
+      color: #ffffff;
+      margin-bottom: 1.75rem;
+      line-height: 1.8;
+      font-size: 0.975rem;
+      letter-spacing: 0.2px;
+      font-weight: 400;
+    }
+    
+    .trust-section_paragraph strong {
+      font-weight: 700;
+      color: #ffffff;
+    }
+    
+    .trust-section_list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.75rem 0;
+    }
+    
+    .trust-section_list li {
+      color: rgba(255, 255, 255, 0.92);
+      margin-bottom: 1.1rem;
+      padding-left: 1.75rem;
+      position: relative;
+      font-size: 0.93rem;
+      line-height: 1.7;
+      font-weight: 400;
+      letter-spacing: 0.15px;
+    }
+    
+    .trust-section_list li:before {
+      content: "•";
+      position: absolute;
+      left: 0.2rem;
+      color: #1E88C8;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+    
+    .trust-section_list li strong {
+      font-weight: 700;
+      color: #ffffff;
+    }
+    
+    .trust-section_cta-text {
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 0.93rem;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      letter-spacing: 0.15px;
+    }
+    
+    .trust-section_image-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding-right: 1rem;
+    }
+    
+    .trust-section_image-column .startup-india_certificate-wp {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .trust-section_image-column .startup-india_certificate {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    /* Mobile Responsive - Tablet */
+    @media screen and (max-width: 991px) {
+      .trust-section_content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2.75rem;
+        padding: 2rem 0;
+      }
+      
+      .trust-section_wrapper .about-cta_title-wrapper {
+        margin-top: 1.25rem !important;
+      }
+      
+      .trust-section_text-content {
+        font-size: 0.95rem;
+      }
+      
+      .trust-section_paragraph {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+      }
+      
+      .trust-section_list li {
+        font-size: 0.9rem;
+        margin-bottom: 0.95rem;
+        line-height: 1.65;
+      }
+      
+      .trust-section_image-column {
+        padding-right: 0;
+      }
+    }
+    
+    /* Mobile Responsive - Small Devices */
+    @media screen and (max-width: 767px) {
+      .trust-section_content-wrapper {
+        gap: 2rem;
+        padding: 1.5rem 0;
+      }
+      
+      .trust-section_wrapper .about-cta_title-wrapper {
+        margin-top: 1rem !important;
+      }
+      
+      .trust-section_text-content {
+        font-size: 0.92rem;
+        line-height: 1.75;
+      }
+      
+      .trust-section_paragraph {
+        font-size: 0.92rem;
+        margin-bottom: 1.25rem;
+        line-height: 1.75;
+      }
+      
+      .trust-section_list li {
+        font-size: 0.88rem;
+        margin-bottom: 0.85rem;
+        padding-left: 1.5rem;
+        line-height: 1.65;
+      }
+      
+      .trust-section_cta-text {
+        font-size: 0.88rem;
+        line-height: 1.65;
+      }
+    }
+    
+    /* Extra Small Devices */
+    @media screen and (max-width: 479px) {
+      .trust-section_content-wrapper {
+        gap: 1.75rem;
+        padding: 1rem 0;
+      }
+      
+      .trust-section_wrapper .about-cta_title-wrapper {
+        margin-top: 0.75rem !important;
+      }
+      
+      .trust-section_text-content {
+        font-size: 0.88rem;
+        line-height: 1.7;
+      }
+      
+      .trust-section_paragraph {
+        font-size: 0.88rem;
+        margin-bottom: 1rem;
+        line-height: 1.7;
+      }
+      
+      .trust-section_list li {
+        font-size: 0.82rem;
+        margin-bottom: 0.7rem;
+        padding-left: 1.25rem;
+        line-height: 1.6;
+      }
+      
+      .trust-section_cta-text {
+        font-size: 0.82rem;
+        line-height: 1.6;
+      }
+    }
   </style>
 </head>
 
@@ -608,52 +824,52 @@ INNOVATIONS is an influencer marketing firm that matches clients with the releva
       style="overflow-x:auto; white-space:nowrap; scroll-behavior:smooth; -webkit-overflow-scrolling: touch;">
 
       <div class="slide"
-        style="display:inline-block; width:257px; height:456px; margin-right:1px; border-radius:0; overflow:hidden; background:#ddd;">
+        style="display:inline-block; width:257px; height:456px; margin-right:1px; border-radius:12px; overflow:hidden; background:#ddd;">
         <img src="ki images/ourwork1.jpg" alt="ki images/ourwork1.jpg"
           style="width:100%; height:100%; object-fit:cover; display:block;">
       </div>
       <div class="slide"
-        style="display:inline-block; width:257px; height:456px; margin-right:1px; border-radius:0; overflow:hidden; background:#ddd;">
+        style="display:inline-block; width:257px; height:456px; margin-right:1px; border-radius:12px;; overflow:hidden; background:#ddd;">
         <img src="ki images/ourwork2.jpg" alt="ki images/ourwork2.jpg"
           style="width:100%; height:100%; object-fit:cover; display:block;">
       </div>
       <div class="slide"
-        style="display:inline-block; width:257px; height:456px; margin-right:1px; border-radius:0; overflow:hidden; background:#ddd;">
+        style="display:inline-block; width:257px; height:456px; margin-right:1px; border-radius:12px; overflow:hidden; background:#ddd;">
         <img src="ki images/ourwork3.jpg" alt="ki images/ourwork3.jpg"
           style="width:100%; height:100%; object-fit:cover; display:block;">
       </div>
       <div class="slide"
-        style="display:inline-block; width:257px; height:456px; margin-right:1px; border-radius:0; overflow:hidden; background:#ddd;">
+        style="display:inline-block; width:257px; height:456px; margin-right:1px; border-radius:12px; overflow:hidden; background:#ddd;">
         <img src="ki images/ourwork4.jpg" alt="ki images/ourwork4.jpg"
           style="width:100%; height:100%; object-fit:cover; display:block;">
       </div>
       <div class="slide"
-        style="display:inline-block; width:257px; height:456px; margin-right:1px; border-radius:0; overflow:hidden; background:#ddd;">
+        style="display:inline-block; width:257px; height:456px; margin-right:1px; border-radius:12px; overflow:hidden; background:#ddd;">
         <img src="ki images/ourwork5.jpg" alt="ki images/ourwork5.jpg"
           style="width:100%; height:100%; object-fit:cover; display:block;">
       </div>
       <div class="slide"
-        style="display:inline-block; width:257px; height:456px; margin-right:1px; border-radius:0; overflow:hidden; background:#ddd;">
+        style="display:inline-block; width:257px; height:456px; margin-right:1px; border-radius:12px; overflow:hidden; background:#ddd;">
         <img src="ki images/ourwork6.jpg" alt="ki images/ourwork6.jpg"
           style="width:100%; height:100%; object-fit:cover; display:block;">
       </div>
       <div class="slide"
-        style="display:inline-block; width:257px; height:456px; margin-right:1px; border-radius:0; overflow:hidden; background:#ddd;">
+        style="display:inline-block; width:257px; height:456px; margin-right:1px; border-radius:12px; overflow:hidden; background:#ddd;">
         <img src="ki images/ourwork7.jpg" alt="ki images/ourwork7.jpg"
           style="width:100%; height:100%; object-fit:cover; display:block;">
       </div>
       <div class="slide"
-        style="display:inline-block; width:257px; height:456px; margin-right:1px; border-radius:0; overflow:hidden; background:#ddd;">
+        style="display:inline-block; width:257px; height:456px; margin-right:1px; border-radius:12px; overflow:hidden; background:#ddd;">
         <img src="ki images/ourwork8.jpg" alt="ki images/ourwork8.jpg"
           style="width:100%; height:100%; object-fit:cover; display:block;">
       </div>
       <div class="slide"
-        style="display:inline-block; width:257px; height:456px; margin-right:1px; border-radius:0; overflow:hidden; background:#ddd;">
+        style="display:inline-block; width:257px; height:456px; margin-right:1px; border-radius:12px; overflow:hidden; background:#ddd;">
         <img src="ki images/ourwork9.jpg" alt="ki images/ourwork9.jpg"
           style="width:100%; height:100%; object-fit:cover; display:block;">
       </div>
       <div class="slide"
-        style="display:inline-block; width:257px; height:456px; margin-right:0; border-radius:0; overflow:hidden; background:#ddd;">
+        style="display:inline-block; width:257px; height:456px; margin-right:0; border-radius:12px; overflow:hidden; background:#ddd;">
         <img src="ki images/ourwork10.jpg" alt="Image 10"
           style="width:100%; height:100%; object-fit:cover; display:block;">
       </div>
@@ -871,18 +1087,50 @@ INNOVATIONS is an influencer marketing firm that matches clients with the releva
   <section class="section-creator-alliances">
     <div class="page-padding">
       <div class="container-large">
-        <div class="padding-vertical padding-large">
-          <div class="about-cta_title-wrapper container-small">
+        <div class="trust-section_wrapper">
+          <!-- Heading (Centered at top) -->
+          <div class="about-cta_title-wrapper" style="margin-bottom: 2rem;">
             <div class="margin-bottom margin-small">
-              <h2 class="heading-medium text-color-white">WHY BRANDS TRUST US</h2>
+              <h2 class="heading-medium text-color-white" style="margin-top:31px;font-size:42px;">WHY BRANDS TRUST US</h2>
             </div>
-            <div class="heading-underline"></div>
+            <div class="heading-underline" style="margin-left: auto; margin-right: auto;"></div>
           </div>
-          <div class="startup-india_certificate-wp"><a href="#" class="w-inline-block w-lightbox"><img
-                src="ki images/whytrustus.png" loading="lazy" sizes="(max-width: 3509px) 100vw, 3509px"
-                srcset="ki images/whytrustus.png 500w, ki images/whytrustus.png 800w, ki images/whytrustus.png 1080w, ki images/whytrustus.png 1600w, ki images/whytrustus.png 3509w"
-                alt="Startup India Certificate" class="startup-india_certificate" />
-              <script type="application/json" class="w-json">{
+          
+          <!-- Two Column Layout -->
+          <div class="trust-section_content-wrapper">
+            <!-- Left Column: Text Content -->
+            <div class="trust-section_text-column">
+              <div class="trust-section_text-content">
+                <p class="trust-section_paragraph">
+                  We partner with forward-thinking brands who recognize the power of authentic influencer marketing. Our data-driven approach ensures every campaign delivers measurable results and genuine engagement with your target audience.
+                </p>
+                
+                <ul class="trust-section_list">
+                  <li><strong>Proven Results:</strong> Consistent ROI across diverse industries and campaign types</li>
+                  <li><strong>Authentic Network:</strong> Access to 2.5L+ carefully vetted and quality influencers</li>
+                  <li><strong>Strategic Excellence:</strong> Expert team with 5+ years of influencer marketing experience</li>
+                  <li><strong>Transparent Process:</strong> Full campaign visibility and real-time analytics dashboard</li>
+                  <li><strong>Brand Safety:</strong> Rigorous quality control and compliance standards</li>
+                </ul>
+                
+                
+              </div>
+            </div>
+            
+            <!-- Right Column: Image -->
+            <div class="trust-section_image-column">
+              <div class="startup-india_certificate-wp">
+                <a href="#" class="w-inline-block w-lightbox">
+                  <img
+                    src="ki images/trust-pic.png"
+                    loading="lazy"
+                    sizes="(max-width: 3509px) 100vw, 3509px"
+                    srcset="ki images/whytrustus.png 500w, ki images/whytrustus.png 800w, ki images/whytrustus.png 1080w, ki images/whytrustus.png 1600w, ki images/whytrustus.png 3509w"
+                    alt="Startup India Certificate"
+                    class="startup-india_certificate"
+                  style="max-height: 567px; border-radius: 12px; object-fit: contain;margin-left: 200px;"
+                  />
+                  <script type="application/json" class="w-json">{
   "items": [
     {
       "_id": "66e345ba9847feb15625f609",
@@ -897,7 +1145,10 @@ INNOVATIONS is an influencer marketing firm that matches clients with the releva
   ],
   "group": ""
 }</script>
-            </a></div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
