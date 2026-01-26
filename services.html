@@ -38,35 +38,141 @@
     }
 
     /* Hero Image Fix - Prevent distortion */
-   .hero_image-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 500px;
-  aspect-ratio: 1 / 1;   
-  margin-left: auto;
-  margin-right: auto;
-}
+    .hero_image-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      aspect-ratio: 1 / 1;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-.hero_image,
-.hero_image-2,
-.hero_image-3 {
-  transform: scale(1);
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;        
-  object-position: center;
-  display: block;
-}
-@media (max-width: 768px) {
-  .hero_image-wrapper {
-    max-width: 360px;
-    margin: 0 auto;
-  }
-}
+    .hero_image,
+    .hero_image-2,
+    .hero_image-3 {
+      transform: scale(1);
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
 
+    @media (max-width: 768px) {
+      .hero_image-wrapper {
+        max-width: 360px;
+        margin: 0 auto;
+      }
+    }
 
+    /* Mobile Service Layout Fixes */
+    .mobile-service-image-container {
+      display: none;
+      /* Hidden on desktop */
+      margin-top: 20px;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+
+    .mobile-service-image {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      object-fit: cover;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .mobile-service-caption {
+      font-size: 14px;
+      color: #666;
+      text-align: center;
+      font-style: italic;
+    }
+
+    .mobile-spacer {
+      display: none;
+      height: 40px;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: 991px) {
+      .mobile-service-image-container {
+        display: block;
+      }
+
+      .influencer-marketing_content-module {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+        /* Increased separation */
+      }
+
+      .influencer-marketing_content-sep {
+        display: none;
+        /* Hide default separators if they look bad, or keep them. Let's hide to control spacing manually */
+      }
+
+      .mobile-spacer {
+        display: block;
+      }
+
+      /* Why Us Section Cleanup */
+      .section-why-us {
+        border-top: 1px solid #ccc;
+        /* Visual separation */
+        padding-top: 40px;
+        margin-top: 40px;
+      }
+
+      /* Force bullet points/list style for Why Us cards on mobile */
+      .why-us-cards-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+      }
+
+      .why-us-cards-grid .glass-effect-card {
+        background: none !important;
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin-bottom: 15px;
+        display: list-item;
+        list-style-type: disc;
+        list-style-position: inside;
+      }
+
+      .why-us-cards-grid .glass-effect-card .card-title-dark {
+        display: inline;
+        font-weight: bold;
+        font-size: 16px;
+        color: #333;
+      }
+
+      .why-us-cards-grid .glass-effect-card .card-description-wrapper {
+        display: inline;
+      }
+
+      .why-us-cards-grid .glass-effect-card p {
+        display: inline;
+        font-size: 14px;
+        color: #555;
+      }
+
+      /* Hide the desktop visual separating gradients in Why Us if they clutter */
+      .bg-gradient-why-us-red {
+        display: none;
+      }
+
+      /* Hide main service image on mobile to avoid duplication if it was shown elsewhere */
+      .influencer-marketing_img-wrapper .contact_hero-image {
+        display: none;
+      }
+    }
   </style>
 </head>
 
@@ -312,11 +418,9 @@
                         understanding of how influencer marketing works. We help ambitious businesses in engaging their
                         ideal target audience by using tried and true techniques.</p>
                     </div>
-                    <div class="contact_hero-image"><img
-                        src="./ki images/update-pic.png"
+                    <div class="contact_hero-image"><img src="./ki images/update-pic.png"
                         style="width: 400px; height: 550px; border-radius: 20px; margin-top: 20px; margin-left: 50px;"
-                        loading="lazy"
-                        srcset="./ki images/update-pic.png 500w, ./ki images/update-pic.png 812w"
+                        loading="lazy" srcset="./ki images/update-pic.png 500w, ./ki images/update-pic.png 812w"
                         sizes="(max-width: 812px) 100vw, 812px" alt="" /></div>
                   </div>
                   <div class="influencer-marketing_content">
@@ -334,6 +438,13 @@
                             helps in providing informed decisions. Our expert team helps in the conversion of vast
                             volumes of data into effective and precisely focused marketing campaigns.</p>
                         </div>
+                        <!-- Mobile Image for Strategic Planning -->
+                        <div class="mobile-service-image-container">
+                          <img src="ki images/service.png" loading="lazy" alt="Strategic Planning"
+                            class="mobile-service-image">
+                          <div class="mobile-service-caption">Strategic Planning & Insights</div>
+                        </div>
+                        <div class="mobile-spacer"></div>
                       </div>
                     </div>
                     <div class="influencer-marketing_content-sep"></div>
@@ -351,6 +462,13 @@
                             global reach, our team focuses on building these relationships to bring you a wide range of
                             voices.</p>
                         </div>
+                        <!-- Mobile Image for Discover Best Influencers -->
+                        <div class="mobile-service-image-container">
+                          <img src="ki images/service2.png" loading="lazy" alt="Discover Best Influencers"
+                            class="mobile-service-image">
+                          <div class="mobile-service-caption">Connecting with Top Influencers</div>
+                        </div>
+                        <div class="mobile-spacer"></div>
                       </div>
                     </div>
                     <div class="influencer-marketing_content-sep"></div>
@@ -366,6 +484,13 @@
                           <p>Our in-house creative team creates branded content that fits your brand and uses
                             influencers to bring your brand story to life and get millions of impressions.</p>
                         </div>
+                        <!-- Mobile Image for Content Production -->
+                        <div class="mobile-service-image-container">
+                          <img src="ki images/update-pic.png" loading="lazy" alt="Content Production"
+                            class="mobile-service-image">
+                          <div class="mobile-service-caption">Creative Content Production</div>
+                        </div>
+                        <div class="mobile-spacer"></div>
                       </div>
                     </div>
                     <div class="influencer-marketing_content-sep"></div>
@@ -382,6 +507,13 @@
                             your business. From conception to end, we create shareable moments that get people talking
                             about your business in measurable ways.</p>
                         </div>
+                        <!-- Mobile Image for Hassle-free Execution -->
+                        <div class="mobile-service-image-container">
+                          <img src="ki images/service.png" loading="lazy" alt="Hassle-free Execution"
+                            class="mobile-service-image">
+                          <div class="mobile-service-caption">Seamless Campaign Execution</div>
+                        </div>
+                        <div class="mobile-spacer"></div>
                       </div>
                     </div>
                     <div class="influencer-marketing_content-sep"></div>
@@ -397,6 +529,12 @@
                           <p>Get detailed tracking reports to see how many people saw the posts, how many clicked on
                             them, etc. Check to see which rules are being used and are being followed. You can then
                             track sales and clicks on links.</p>
+                        </div>
+                        <!-- Mobile Image for Detailed Report -->
+                        <div class="mobile-service-image-container">
+                          <img src="ki images/service2.png" loading="lazy" alt="Detailed Report"
+                            class="mobile-service-image">
+                          <div class="mobile-service-caption">Comprehensive Reporting</div>
                         </div>
                       </div>
                     </div>
