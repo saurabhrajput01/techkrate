@@ -36,6 +36,37 @@
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
+
+    /* Hero Image Fix - Prevent distortion */
+   .hero_image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1 / 1;   
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero_image,
+.hero_image-2,
+.hero_image-3 {
+  transform: scale(1);
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        
+  object-position: center;
+  display: block;
+}
+@media (max-width: 768px) {
+  .hero_image-wrapper {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+
+
   </style>
 </head>
 
@@ -97,6 +128,7 @@
           display: -webkit-box;
           overflow: hidden;
           -webkit-line-clamp: 3;
+          line-clamp: 3;
           -webkit-box-orient: vertical;
         }
 
@@ -105,6 +137,7 @@
           display: -webkit-box;
           overflow: hidden;
           -webkit-line-clamp: 2;
+          line-clamp: 2;
           -webkit-box-orient: vertical;
         }
 
@@ -169,14 +202,11 @@
                   <div class="button-wrapper"><a href="contact.html" class="button w-button">Let&#x27;s Talk</a></div>
                 </div>
               </div>
-              <div class="hero_image-wrapper"><img
-                  src="./ki images/service.png"
-                  loading="lazy"
+              <div class="hero_image-wrapper"><img src="./ki images/service.png" loading="lazy"
                   style="opacity:0;-webkit-transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
                   alt="home-dashboard" width="820"
                   srcset="./ki images/service.png 500w, ./ki images/service.png 800w, ./ki images/service.png 1080w, ./ki images/service.png 1340w"
-                  sizes="(max-width: 991px) 100vw, 820px" class="hero_image" /><img
-                  src="./ki images/service2.png"
+                  sizes="(max-width: 991px) 100vw, 820px" class="hero_image" /><img src="./ki images/service2.png"
                   loading="lazy"
                   style="-webkit-transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
                   alt="home-dashboard" width="820"
@@ -1221,4 +1251,5 @@
 </body>
 <!-- Mirrored from www.k-i.co.in/services by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 May 2025 18:53:10 GMT -->
 
-</html><
+</html>
+<
